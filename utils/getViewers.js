@@ -19,7 +19,8 @@ exports.getAllViewers = async (user) => {
         data.chatters[type].forEach(moderator => {
             returnValue.viewers.push({
                 name: moderator,
-                bot: bots.indexOf(moderator) != -1
+                bot: bots.indexOf(moderator) != -1,
+                type: type
             })
             if (bots.indexOf(moderator) != -1) {
                 returnValue.bots++
