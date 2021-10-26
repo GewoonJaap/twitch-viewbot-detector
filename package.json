@@ -1,5 +1,5 @@
 {
-  "name": "clippy-api",
+  "name": "twitch-viewbot-detector",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
