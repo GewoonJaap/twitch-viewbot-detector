@@ -1,2 +1,2 @@
-# twitch-viewbot-detector
- 
+# clippy-api
+ Twitch Clip API written in NodeJS
