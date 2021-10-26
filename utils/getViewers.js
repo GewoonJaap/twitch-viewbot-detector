@@ -5,10 +5,10 @@ exports.getAllViewers = async (user) => {
     console.log(user)
     const bots = await getBots.getAllBots();
     let returnValue = {
-        "viewers": [],
         "chatter_count": data.chatter_count,
         "anonViewers": 0,
         "bots": 0,
+        "viewers": []
 
     }
 
@@ -26,7 +26,7 @@ exports.getAllViewers = async (user) => {
             }
         })
     });
-    returnValue.anonViewers = returnValue.viewers - returnValue.chatter_count;
+    returnValue.anonViewers = returnValue.viewers.length - returnValue.chatter_count;
     return returnValue;
 
 
